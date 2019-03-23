@@ -19,6 +19,7 @@
   width: 300px;
   height: 350px;
   text-align: center;
+  filter: blur(10px);
   transition: all 1000ms; }
 
 .content .title {
