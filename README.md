@@ -1,5 +1,10 @@
 # Hello-Toby-World
 
-Still in early stages of construction.
+Portfolio web site
 
-### Thank you for your patience
+## Status
+Website is online and hosted at supplied domain.
+
+## Backend Features to add
+* Cron scheduled updates that pull data from MySQL Database
+  * DB will call from GitHub API to fetch my project info
