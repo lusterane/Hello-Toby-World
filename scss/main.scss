@@ -1,9 +1,9 @@
-$primary-color: #444;
+$primary-color: white;
 
 body {
     background: rgba(0,0,0,0.9);
     margin: 0;
-    color: #fff;
+    color: $primary-color;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -23,10 +23,10 @@ body {
 
 .showcase:hover::after {
     filter: blur(0px);
-    -webkit-filter: blur(0px);
+    -webkit-filter: blur(0  px);
 }
 
-.showercase:hover .content {
+.showcase:hover .content {
     filter: blur(2px);
     -webkit-filter: blur(2px);
 }
