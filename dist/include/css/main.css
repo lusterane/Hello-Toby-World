@@ -4,7 +4,7 @@ body {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-.showcase{
+.showcase::after {
   content: '';
   height: 100vh;
   width: 100%;
@@ -12,50 +12,18 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: block; 
-  transition: all 1000ms;
-}
-.content{
-  filter: blur(10px);
-  -webkit-filter: blur(10  px);
-}
-.content:hover{
-  filter: blur(0px);
-  -webkit-filter: blur(0  px);
-  transition : all 1000ms;
-}/*
-.showcase:hover title{
-    content: '';
-    display: block;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-}*/
-/*
-.showcase:hover{ 
-  filter: blur(0px);
-  -webkit-filter: blur(0 px);
+  display: block;
   filter: blur(10px);
   -webkit-filter: blur(10px);
-  transition: all 1000ms; }*/
+  transition: all 1000ms; }
 
+.showcase:hover::after {
+  filter: blur(0px);
+  -webkit-filter: blur(0 px); }
 
-/*s
-.showcase:hover .showcase{
-    filter: blur(0px);
-    -webkit-filter: blur(0  px);
-    filter: blur(10px);
-    -webkit-filter: blur(10  px);
-    //transition: all 1000ms;
-}*/
-/*
-.content:hover .showcase {
-    content: '';
-    display: block;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-}*/
-
-/* bottom is only style*/
+.showcase:hover .content {
+  filter: blur(2px);
+  -webkit-filter: blur(2px); }
 
 .content {
   position: absolute;
@@ -66,7 +34,8 @@ body {
   margin-left: -145px;
   width: 300px;
   height: 350px;
-  text-align: center; }
+  text-align: center;
+  transition: all 1000ms; }
 
 .content .logo {
   height: 180px;
