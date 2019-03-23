@@ -26,6 +26,11 @@ body {
     -webkit-filter: blur(0px);
 }
 
+.showercase:hover .content {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
 .content {
     position: absolute;
     z-index: 1;
@@ -47,8 +52,10 @@ body {
 
 .content .title {
     font-size: 2.2 rem;
+    margin-top: 1rem;
 }
 
 .content .text {
-
+    line-height: 1.7;
+    margin-top: 1rem;
 }
