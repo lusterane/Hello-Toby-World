@@ -8,3 +8,4 @@ Portfolio web site
 ## Backend Features to add
 * Cron scheduled updates that pull data from MySQL Database
   * DB will call from GitHub API to fetch my project info
+* Develop API to communicate to database
