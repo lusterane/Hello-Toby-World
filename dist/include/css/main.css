@@ -13,10 +13,10 @@
   position: absolute;
   z-index: 1;
   top: 10%;
-  left: 50%;
+  left:30%;
+  right:30%;
   margin-top: 0px;
-  margin-left: -145px;
-  width: 300px;
+  width: 40%;
   height: 350px;
   text-align: center;
   filter: blur(10px);
