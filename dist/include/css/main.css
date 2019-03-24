@@ -1,3 +1,8 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
 .showcase::after {
   content: '';
   height: 100vh;
@@ -7,6 +12,7 @@
   background-repeat: no-repeat;
   background-position: center;
   display: block;
+  filter: contrast(65%);
   transition: all 1000ms; }
 
 .content {
@@ -23,14 +29,32 @@
   transition: all 1000ms; }
 
 .content .title {
-  font-size: 2.2 rem;
-  margin-top: 1rem; }
+  font-size: 2vw;
+  margin-top: 2rem;
+  font-weight: bold;
+  letter-spacing: .4em;
+  margin-bottom: .7rem; }
 
 .content .text {
-  line-height: 1.7;
-  margin-top: 1rem; }
+  font-size: 1vw;
+  letter-spacing: .3em;
+  margin-bottom: 2rem; }
 
-#about-me-button {
-  margin-top: 3rem;
-  width: 100%;
+ #logo {
+  max-width:30%;
+  height:auto;
+  color:white;
+ } 
+hr {
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid white;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+#button-row{
+  width:100%;
+  margin-top: vw;
 }
