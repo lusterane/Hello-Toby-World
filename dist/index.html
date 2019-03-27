@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--add tags for SEO-->
     <meta name="title" content="Toby Chow's Portfolio">
     <meta name="author" content="Toby Chow">  
-    <meta name="description" content="I'm a passionate programmer that's constantly learning and open to new challenges. I've taught myself a variety of languages and technologies such as Python, Android, Adobe XD, ASP.NET Core, C#, SQL, and AutoHotKey, . I'm also starting to use Git consistently to support version control on all my projects.">
+    <meta name="description" content="I'm a passionate programmer that's constantly learning and open to new challenges. I've taught myself a variety of languages and technologies such as Python, Android, Adobe XD, ASP.NET Core, C#, SQL, and AutoHotKey. I'm also starting to use Git consistently to support version control on all my projects to streamline my workflow.">
     <meta name="keywords" content="portfolio, programmer, template, ideas, free, page, pdf, projects, github, c++, website, android, computer, building, a, best, bootstrap, programmer, design, example, freelance, java, python, reddit">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,65 +16,75 @@
     <title>Toby Chow | Portfolio</title>
 </head>
 <body>
-    <header class="showcase">
-        <!--add any other images if necessary-->
+    <header class=showcase>
+        <!-- place holder for background-->
     </header>
     <div class="content">
-        <img src="include/img/tc.png" id="logo">
+        <img src="include/img/tc.png" id="logo" alt="logo picture">
         <hr>
-        
         <div class="title">TOBY CHOW</div>
         <div class="text">
             CURIOUS | PASSIONATE | EFFICIENT
         </div>
         <hr>
         <div class="button-row">
-            <a href="https://www.facebook.com/kyle.a.zhouOo"><button class="btn btn-outline-light" id="about-me-button">ABOUT ME</button></a>
+            <button class="btn btn-outline-light" id="about-me-button">ABOUT ME</button>
             <button class="btn btn-outline-light" id="projects-button">PROJECTS</button>
             <button class="btn btn-outline-light" id="contact-button">CONTACT</button>
             <button class="btn btn-outline-light" id="resume-button">RESUME</button>
-            <p>buttons still need editing</p>
+        </div>
+        <div class="footer">
+            <p>Modals still in development. Check back soon for exciting new updates! :)</p> 
         </div>
     </div>
-<!--
 
-    <section class="services">
-        <div class="container grid-3">
-            <div>
-                <i class="fab fa-linkedin fa-3x"></i>
-                <h3>LinkedIn</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, deleniti!</p>
+    <!-- about me modal -->
+    <div class="modal" id="about-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>ABOUT ME</h2>
+                <button class="close" id="about-close">&times;</button>
             </div>
-            <div>
-                <i class="fab fa-github fa-3x"></i>
-                <h3>GitHub</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, deleniti!</p>
-            </div>
-            <div>
-                <i class="fas fa-code fa-3x"></i>
-                <h3>Projects</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, deleniti!</p>
+            <div id="about-description">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi ipsam voluptatum saepe maxime soluta eaque reiciendis iste consequuntur quia voluptatem molestias, doloribus non officiis eos repellendus sed facilis repudiandae delectus officia eveniet. Provident odit earum qui, fuga sapiente maxime voluptatem! </p>
             </div>
         </div>
-    </section>
+    </div>
 
-
-    <section class="about">
-        <div class="container">
-            <div class="grid-2">
-                <div class="center">
-                    <i class="fas.fa-laptop-code fa-10x">
-                </div>
-                <div>About Me</div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis mollitia maiores reprehenderit molestias magnam facilis sunt praesentium inventore quaerat culpa, vero accusantium beatae sapiente ullam error eveniet vitae iste rerum dignissimos autem. Numquam tempora fugiat deserunt, consectetur nostrum quae qui.</p>
+    <!-- project modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>PROJECTS</h2>
+                <button class="close" id="project-close">&times;</button>
+            </div>
+            <div id="project-description">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi ipsam voluptatum saepe maxime soluta eaque reiciendis iste consequuntur quia voluptatem molestias, doloribus non officiis eos repellendus sed facilis repudiandae delectus officia eveniet. Provident odit earum qui, fuga sapiente maxime voluptatem! </p>
             </div>
         </div>
-    </section>
--->
-<!-- maybe add footer into page
-    <footer class="center">
-        <p>Hello Toby World - 2019 dynamic year?</p> 
-    </footer>
--->
+    </div>
+
+    <!-- contact modal -->
+    <div class="modal" id="contact-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>CONTACT</h2>
+                <button class="close" id="contact-close">&times;</button>
+            </div>
+            <div id="contact-description">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi ipsam voluptatum saepe maxime soluta eaque reiciendis iste consequuntur quia voluptatem molestias, doloribus non officiis eos repellendus sed facilis repudiandae delectus officia eveniet. Provident odit earum qui, fuga sapiente maxime voluptatem! </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- resume modal -->
+    <div class="modal" id="resume-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" id="resume-close">&times;</button>
+            </div>
+            <iframe src="https://drive.google.com/file/d/1dYmf-NTsJjzWOiVlkv_QcL9cWEtwvVkn/preview" width="100%" height="100%"></iframe>
+        </div>
+    </div>
 </body>
 </html>
