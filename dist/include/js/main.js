@@ -14,11 +14,12 @@ $(document).ready(function(){
 })
 
 // bluring content
+
 $(document).ready(function(){
     $(".showcase").hover(function(){
         var styles={
-            filter: "blur(15px)",
-            '-webkit-filter': "blur(15px)",
+            filter: "blur(8px)",
+            '-webkit-filter': "blur(8px)",
             transition: "all 1000ms"
         }   
         $(".content").css(styles);
@@ -40,51 +41,6 @@ $(document).ready(function(){
     })
 })
 
-// about-me modal open
-$(document).ready(function(){
-    $("#about-me-button").click(function(){
-        $("#about-modal").css("display", "block");
-        $("#about-close").click(function(){
-            $("#about-modal").css("display", "none");
-        })
-    })
-})
-
-// close modal
-$(document).keydown(function(){
-    $(".modal").css("display", "none");
-})
-
-
-// projects modal open
-$(document).ready(function(){
-    $("#projects-button").click(function(){
-        $("#project-modal").css("display", "block");
-        $("#project-close").click(function(){
-            $("#project-modal").css("display", "none");
-        })
-    })
-})
-
-// contact modal open
-$(document).ready(function(){
-    $("#contact-button").click(function(){
-        $("#contact-modal").css("display", "block");
-        $("#contact-close").click(function(){
-            $("#contact-modal").css("display", "none");
-        })
-    })
-})
-
-// resume modal open
-$(document).ready(function(){
-    $("#resume-button").click(function(){
-        $("#resume-modal").css("display", "block");
-        $("#resume-close").click(function(){
-            $("#resume-modal").css("display", "none");
-        })
-    })
-})
 
 function unblurCSS(){
     var styles={
