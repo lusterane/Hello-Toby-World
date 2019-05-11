@@ -62,7 +62,7 @@
   /* About Me Button */
   .about-me-btn {
     border:1.2px solid white;
-    margin-top:7em;
+    margin-top:8em;
     padding: .5em 3em;
     color:white;
     font-size:.8em;
@@ -79,7 +79,6 @@
 
   .about-me-btn:focus {
     outline:0;
-    
   }
   
   /* // ABOUT ME PAGE // */
@@ -88,6 +87,13 @@
     height:800px;
   }
   
+  #about-me-page h1 {
+    padding: 2em .5em;
+  }
+
+  #about-me-page p {
+    padding: 1em 5em;
+  }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
