@@ -3,7 +3,7 @@
   body {
     font-family: 'Open Sans', sans-serif;
     color: white;
-    background-color:black;
+    background-color:#191919;
   }
 
   html{
@@ -85,15 +85,29 @@
   #about-me-page {
     top:10%;
     height:800px;
+    padding: .7em 1em;
   }
   
   #about-me-page h1 {
-    padding: 2em .5em;
+    padding: 3em 0em;
+    letter-spacing: .2em;
   }
 
-  #about-me-page p {
-    padding: 1em 5em;
+  #skills-page {
+    top: 70%;
   }
+
+  .progress-bar {
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #2c98f0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
