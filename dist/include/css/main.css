@@ -81,43 +81,48 @@
     outline:0;
   }
   
-  /* // ABOUT ME PAGE // */
-  #about-me-page {
+  #about-me-page,
+  #skills-page{
     top:10%;
     height:800px;
     padding: .7em 1em;
   }
-  
-  #about-me-page h1 {
+
+  #about-me-page h1, 
+  #skills-page h1{
     padding: 3em 0em;
     letter-spacing: .2em;
   }
-
-  #skills-page {
-    top: 70%;
+  
+  #skills-page h3{
+    padding: 1em 0em;
   }
 
-  .progress-bar {
+  .progress{
+    margin-bottom: 2em;
+    padding-top: 0em;
+    height: 6px;
+    position: relative;
+    overflow: visible;
+  }
+
+  
+
+  .progress-bar span{
     position: absolute;
+    top:-33px;
     right: 0;
-    width: 10px;
-    height: 10px;
-    content: '';
-    background: #2c98f0;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%; }
+  }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/*@media only screen and (min-width: 600px) {...} 
+/*@media only screen and (min-width: 600px) {...} */
 
 /* Medium devices (landscape tablets, 768px and up) */
-/*@media only screen and (min-width: 768px) {...} 
+/*@media only screen and (min-width: 768px) {...} */
 
 /* Large devices (laptops/desktops, 992px and up) */
-/*@media only screen and (min-width: 992px) {...} 
+/*@media only screen and (min-width: 992px) {...} */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-/*@media only screen and (min-width: 1200px) {...}
+/*@media only screen and (min-width: 1200px) {...}*/
