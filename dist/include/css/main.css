@@ -81,20 +81,20 @@
     outline:0;
   }
   
-  #about-me-page,
-  #skills-page{
-    top:10%;
-    height:800px;
-    padding: .7em 1em;
+  .about-me-container,
+  .skills-container,
+  .projects-container{
+    padding: 5em 1em;
   }
 
-  #about-me-page h1, 
-  #skills-page h1{
+  .about-me-container h1,
+  .skills-container h1,
+  .projects-container h1{
     padding: 3em 0em;
     letter-spacing: .2em;
   }
   
-  #skills-page h3{
+  .skils-container h3{
     padding: 1em 0em;
   }
 
@@ -106,12 +106,15 @@
     overflow: visible;
   }
 
-  
-
   .progress-bar span{
     position: absolute;
     top:-33px;
     right: 0;
+  }
+  
+  #github-project-icon{
+    text-align: center;
+    width:100%;
   }
 } 
 
