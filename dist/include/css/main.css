@@ -6,6 +6,10 @@
     background-color:#191919;
   }
 
+  a { color: inherit; } 
+
+  a:hover { color: inherit; } 
+
   html{
     scroll-behavior:smooth;
   }
@@ -83,13 +87,15 @@
   
   .about-me-container,
   .skills-container,
-  .projects-container{
+  .projects-container,
+  .contact-me-container{
     padding: 5em 1em;
   }
 
   .about-me-container h1,
   .skills-container h1,
-  .projects-container h1{
+  .projects-container h1,
+  .contact-me-container h1{
     padding: 3em 0em;
     letter-spacing: .2em;
   }
@@ -115,7 +121,29 @@
   #github-project-icon{
     text-align: center;
     width:100%;
+    
   }
+
+  .contact-form {
+    margin: 0 auto;
+
+  }
+
+  .contact-box{
+    text-align: center;
+    width:400px;
+    margin: 0 auto;
+    margin-top: 1em;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color:#fff;
+  }
+
+
+
+  
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

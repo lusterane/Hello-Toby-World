@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="include/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="include/js/main.js"></script>  
+    
     <title>Toby Chow | Portfolio</title>
 </head>
     <body>
@@ -41,6 +40,8 @@
         </div>
         <!--// Skills //-->
         <div class="skills-container">
+
+            <!-- Use of Bootstrap 4 for progress bars -->
             <h1>SKILLS</h1>
             <h3>Languages</h3>
             <div class="container">
@@ -184,9 +185,31 @@
         <!--// Projects Page //-->
         <div class="projects-container">
             <h1>MY PROJECTS</h1>
-            <p>Currently implementing backend features to showcase projects straight from GitHub, live. Meanwhile, you can still checkout my projects here. </p>
-            <i class="fab fa-github fa-10x" id="github-project-icon"></i>
+            <p>Currently implementing backend features to showcase projects straight from GitHub. Meanwhile, you can still checkout my projects here. </p>
+            <a href="https://github.com/lusterane" target="_blank"><i class="fab fa-github fa-10x" id="github-project-icon" link="hi.com"></i></a>
         </div>
         
+        <!--// Contact Me Page //-->
+        <div class="contact-me-container">
+            <h1>CONTACT ME</h1>
+            <form id="contact-form" method="post" action="">
+
+                <input name="name" type="text" class="contact-box" placeholder="Enter your name here" required>
+                <br>
+
+                <input name="email" type="email" class="contact-box" placeholder="Enter your email here" required>
+                <br>
+
+                <textarea name="message" class="contact-box" placeholder="Write your message here" row="4" required></textarea>
+                <br>
+                <input type="submit" class="submit-button" value="SEND MESSAGE">
+            </form>
+        </div>
+
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="include/js/main.js"></script>  
+        <script src="include/js/contact.js"></script>
     </body>
 </html>
