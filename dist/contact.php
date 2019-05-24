@@ -1,43 +1,26 @@
 <?php
 
-    /* Configuration Variables */
-    
-    // email address that will be in from text box
-    $from = 'demo contact';
-    $sendTo = 'tobychow98@gmail.com';
+    // store info from user
+    $name = $_POST['name'];
+    $visitor_email = $_POST['email'];
+    $message = $_POST['message'];
 
-    // subject of the email
-    $subject = 'New message from Portfolio Website'
+    $email_from = 'portfoliowebsite@hellotobyworld.com';
 
-    // form field names and translations
-    $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
+    $email_subject = "Portfolio Website Message";
 
-    // success message
-    $successMessage = "Message successfully submitted. I will get back to you soon!";
+    $email_body = "User Name: $name.\n".
+    "User Email: $visitor_email.\n".
+    "User Message: $message.\n";
 
-    // error message
-    $errorMessage = "Unfortunately, there was an error submitting the message. Please try again later";
+    $to = "tobychow98@gmail.com";
 
-    // debuging
-    // error_reporting(E_ALL & ~E_NOTICE);
-    
-    try{
-        if(count($_POST) == 0) throw new \Exception('Form is Empty');
+    $headers = "From: $email_from \r\n";
 
-        $emailText = "You have a new message from your contact form\n=============================\n";
+    $headers .= "Reply-To: $visitor_email \r\n";
 
-        foreach ($_POST as $key => $value) {
-            // If the field exists in the $fields array, include it in the email 
-            if (isset($fields[$key])) {
-                $emailText .= "$fields[$key]: $value\n";
-            }
-        }
+    // send the email
+    mail($to, $email_subject, $email_body, $headers);
 
-        $headers = array('Content-Type: text/plain; charset="UTF-8";',
-            'From: ' . $from,
-            'Reply-To: ' . $from,
-            'Return-Path: ' . $from,
-        );
-
-        
-    }
+    header("Location: index.html");
+?>

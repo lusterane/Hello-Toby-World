@@ -1,5 +1,5 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 500px) and (max-width: 764px) {
   body {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -236,24 +236,27 @@
   }
 
   /* Resume Button */
-  .resume-btn {
+  .resume-btn,
+  .submit-btn {
     border:1.2px solid white;
     margin-top:8em;
     padding: .5em 3em;
     color:white;
     font-size:.8em;
     background: none;
-    transition: all 1000ms;
+    transition: all 500ms;
   }
 
-  .resume-btn:hover{
+  .resume-btn:hover,
+  .submit-btn:hover{
     background-color: white;
     color:grey;
     text-decoration: none;
     transition: all 300ms;
   }
 
-  .resume-btn:focus {
+  .resume-btn:focus,
+  .submit-btn:focus {
     outline:0;
   }
   
@@ -295,13 +298,14 @@
     width:100%;
     
   }
-
+  .contact-form{
+    text-align: center;
+    margin: 0px auto;
+  }
 
   .contact-box{
-    text-align: center;
-    width:300px;
-    margin-top: 1.5em;
-    margin: 0px auto;
+    width:85vw;
+    margin: 1em auto;
     background: transparent;
     border: none;
     outline: none;
@@ -309,8 +313,23 @@
     color:#fff;
   }
 
+  .contact-box:focus {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color:#fff;
+  }
 
+  #message-box {
+    height: 100px;
+  }
 
+  .submit-btn {
+    margin-top: 2em;
+    width:85vw;
+    height:3.5em;
+  }
   
 } 
 

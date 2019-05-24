@@ -192,17 +192,17 @@
         <!--// Contact Me Page //-->
         <div class="contact-me-container">
             <h1>CONTACT ME</h1>
-            <form class="contact-form" method="post" action="">
+            <form class="contact-form" method="post" action="contact.php">
 
-                <input name="name" type="text" class="contact-box" placeholder="Enter your name here" required>
+                <input name="name" type="text" class="contact-box" placeholder="Name" required>
                 <br>
 
-                <input name="email" type="email" class="contact-box" placeholder="Enter your email here" required>
+                <input name="email" type="email" class="contact-box" placeholder="Email" required>
                 <br>
 
-                <textarea name="message" class="contact-box" placeholder="Write your message here" row="4" required></textarea>
+                <textarea name="message" class="contact-box" id="message-box" placeholder="Message" row="10" required></textarea>
                 <br>
-                <input type="submit" class="submit-button" value="SEND MESSAGE">
+                <input type="submit" class="submit-btn" value="SEND MESSAGE">
             </form>
         </div>
 
