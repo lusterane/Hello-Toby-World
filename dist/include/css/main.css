@@ -1,5 +1,11 @@
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 768px) {
+  :root {
+    --rose-gold: #F66C35;
+    --blue: #017672;
+    --black: #232323;
+    }
+
   body {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -45,6 +51,8 @@
       filter: blur(0px);
     }
   }
+
+  
 
 @-webkit-keyframes jello-horizontal {
   0% {
@@ -173,12 +181,12 @@
     z-index: 1;
     top:10%;
     text-align: center;
-    -webkit-animation: unblur 2.0s forwards;
-    animation: unblur 2.0s forwards;
+    -webkit-animation: unblur 4.0s forwards;
+    animation: unblur 4.0s forwards;
   }
 
   .content .title{
-    font-size: 1em;
+    font-size: 1.5em;
     letter-spacing: .5em;
     margin-bottom: 1rem; 
   }
@@ -198,8 +206,6 @@
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    -webkit-animation: blur 3.0s forwards;
-    animation: blur 3.0s forwards;
   }
 
   /* TC logo */
@@ -235,7 +241,7 @@
   .resume-btn:hover,
   .submit-btn:hover{
     background-color: white;
-    color:grey;
+    color:black;
     text-decoration: none;
     transition: all 300ms;
   }
@@ -272,6 +278,10 @@
     overflow: visible;
   }
 
+  .progress-bar {
+    background-color: var(--rose-gold);
+  }
+
   .progress-bar span{
     position: absolute;
     top:-33px;
@@ -281,8 +291,51 @@
   #github-project-icon{
     text-align: center;
     width:100%;
-    
   }
+
+  .project-title{
+    font-size:2em;
+  }
+
+  .project-sub-title{
+    font-size:1em;
+    margin-left: 1em;
+  }
+
+  .project-box {
+    padding: 30px;
+    border:white solid 1px;
+    background: var(--black);
+  }
+
+  @-webkit-keyframes select-1 {
+    from {
+      background:var(--black);
+    }
+    to {
+      background-color: var(--blue);
+      color:white;
+      text-decoration: none;
+    }
+  }
+
+  @keyframes select-1 {
+    from {
+      background:var(--black);
+    }
+    to {
+      
+      border: var(--blue) solid 1px;
+      text-decoration: none;
+    }
+  }
+
+  .project-box:hover{
+    -webkit-animation: select-1 .5s forwards;
+    animation: select-1 .5s forwards;
+  }
+
+
   .contact-form{
     text-align: center;
     margin: 0px auto;
@@ -302,8 +355,9 @@
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid white;
     color:#fff;
+    transition: 500ms;
   }
 
   #message-box {
