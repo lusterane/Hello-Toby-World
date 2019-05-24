@@ -1,5 +1,5 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 500px) and (max-width: 764px) {
+@media (max-width: 768px) {
   body {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -9,11 +9,6 @@
   a { color: inherit; } 
 
   a:hover { color: inherit; } 
-
-  html{
-    scroll-behavior:smooth;
-  }
-
   /* CSS animations */
   @-webkit-keyframes blur {
     from {
@@ -50,17 +45,6 @@
       filter: blur(0px);
     }
   }
-
-  @keyframes box-animate {
-    from{}
-  }
-
-  @keyframes onclick {
-    from {
-      filter: 
-    }
-  }
-
 
 @-webkit-keyframes jello-horizontal {
   0% {
@@ -183,7 +167,6 @@
             transform: scale3d(1, 1, 1);
   }
 }
-
   /* // INTRODUCTION PAGE //*/
   .content {
     position: absolute;
@@ -195,9 +178,14 @@
   }
 
   .content .title{
-    font-size: 1.5em;
+    font-size: 1em;
     letter-spacing: .5em;
     margin-bottom: 1rem; 
+  }
+
+  .content .text {
+    font-size: .8em;
+    letter-spacing: .3em;
   }
   
   /* Background image blur animation */
@@ -213,13 +201,7 @@
     -webkit-animation: blur 3.0s forwards;
     animation: blur 3.0s forwards;
   }
-  
-  /* Description words */  
-  .content .text {
-    font-size: 2.2vw;
-    letter-spacing: .3em;
-  }
-  
+
   /* TC logo */
    #logo {
     max-width:30%;
@@ -232,7 +214,10 @@
   hr {
     display: block;
     border-top: 1px solid white;
-    margin: 3em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: .85em;
+    margin-right: .85em;
   }
 
   /* Resume Button */
