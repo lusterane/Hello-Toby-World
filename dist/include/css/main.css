@@ -176,19 +176,32 @@
 }
   /* // INTRODUCTION PAGE //*/
   .content {
+    display:flex;
+    
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
     position:absolute;
+    z-index: 1;
+    top:10%;
     -webkit-animation: unblur 4.0s forwards;
     animation: unblur 4.0s forwards;
   }
 
   .content .title{
-    text-shadow: 0px 0px 3px black;
-    font-size: 1.5em;
+    flex: 1;
+
+    font-size: 2em;
     letter-spacing: .5em;
-    margin-bottom: 1rem; 
   }
 
   .content .text {
+    flex: 1;
+
     font-size: .8em;
     letter-spacing: .3em;
   }
@@ -206,15 +219,14 @@
 
   /* TC logo */
    #logo {
-    max-width:30%;
-    height:auto;
-    margin-bottom: 1em;
+    flex: 1;
+    width: 12em;
     filter: invert(100%);
    }
 
   /* Header lines for introscreen */
   hr {
-    display: block;
+    flex: 1;
     border-top: 1px solid white;
     margin-top: 3em;
     margin-bottom: 3em;
@@ -225,8 +237,8 @@
   /* Resume Button */
   .resume-btn,
   .submit-btn {
+    flex:1;
     border:1.2px solid white;
-    margin-top:8em;
     padding: .5em 3em;
     color:white;
     font-size:.8em;
