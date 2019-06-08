@@ -1,14 +1,13 @@
-/* Extra small devices (phones, 600px and down) */
   :root {
-    --rose-gold: #F66C35;
-    --blue: #017672;
-    --black: #232323;
+    --blue: #335d67;
+    --black: #060d0f;
     }
 
   body {
     font-family: 'Open Sans', sans-serif;
     color: white;
-    background-color:#191919;
+    /* color used to be #191919 */
+    background-color: var(--black);
   }
 
   a { color: inherit; } 
@@ -20,7 +19,7 @@
       filter: blur(0px);
     }
     to {
-      filter: blur(3px);
+      filter: blur(2px);
     }
   }
 
@@ -29,7 +28,7 @@
       filter: blur(0px);
     }
     to {
-      filter: blur(3px);
+      filter: blur(2px);
     }
   }
 
@@ -176,61 +175,69 @@
 }
   /* // INTRODUCTION PAGE //*/
   .content {
-    position: absolute;
+    display:flex;
+    
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+    position:absolute;
     z-index: 1;
     top:10%;
-    text-align: center;
     -webkit-animation: unblur 4.0s forwards;
     animation: unblur 4.0s forwards;
   }
 
   .content .title{
+    flex: 1;
+    font-weight: bolder;
+    margin-bottom: 1rem;
     font-size: 1.5em;
     letter-spacing: .5em;
-    margin-bottom: 1rem; 
   }
 
   .content .text {
+    flex: 1;
     font-size: .8em;
     letter-spacing: .3em;
   }
   
   /* Background image blur animation */
   .showcase {
-    content: '';
+    display:flex;
     height: 100vh;
-    width: 100%;
+    flex-basis: 100;
     background-image: url(../img/showcase.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: block;
   }
 
   /* TC logo */
    #logo {
-    max-width:30%;
-    height:auto;
-    margin-bottom: 1em;
+    flex: 1;
+    width: 12em;
     filter: invert(100%);
    }
 
   /* Header lines for introscreen */
   hr {
-    display: block;
+    flex: 1;
+    width: 27em;
     border-top: 1px solid white;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    margin-left: .85em;
-    margin-right: .85em;
+    margin: 3em .85em;
   }
 
   /* Resume Button */
   .resume-btn,
   .submit-btn {
+    flex:1;
     border:1.2px solid white;
-    margin-top:8em;
     padding: .5em 3em;
+    margin: 5em auto;
     color:white;
     font-size:.8em;
     background: none;
@@ -250,22 +257,27 @@
     text-decoration: none;
   }
 
-  .about-me-container,
-  .skills-container,
-  .projects-container,
-  .contact-me-container{
-    padding: 5em 1em;
+  .info-container{
+    letter-spacing: 0px;
+    padding: 10em 5em;
   }
 
-  .about-me-container h1,
-  .skills-container h1,
-  .projects-container h1,
-  .contact-me-container h1{
-    padding: 3em 0em;
+  h1{
+    padding: 3em 0px;
     letter-spacing: .2em;
   }
   
-  .skils-container h3{
+  .progress-wrap {
+    display:flex;
+  
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .skill-entry {
+    width: 30%;
+  }
+  h3{
     margin: 1em 0em;
   }
 
@@ -278,7 +290,7 @@
   }
 
   .progress-bar {
-    background-color: var(--rose-gold);
+    background-color: var(--blue);
   }
 
   .progress-bar span{
@@ -291,20 +303,27 @@
     text-align: center;
     width:100%;
   }
-
+  .projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .project-title{
-    font-size:2em;
+    font-size: 20px;
   }
 
   .project-sub-title{
-    font-size:1em;
+    font-size:14px;
     margin-left: 1em;
   }
 
   .project-card {
-    padding: 2em;
+    font-size: 14px;
+    padding: 1em;
     margin: 1em;
-    height:10%;
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
     border:white solid 1px;
     background: var(--black);
   }
@@ -364,7 +383,7 @@
   }
 
   .contact-box{
-    width:85vw;
+    width:35vw;
     margin: 1em auto;
     background: transparent;
     border: none;
@@ -388,14 +407,11 @@
 
   .submit-btn {
     margin-top: 2em;
-    width:85vw;
+    width:35vw;
     height:3.5em;
   }
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/*@media only screen and (min-width: 600px) {...} */
-
+  /*mobile*/
+  /* @media only screen and (max-width: 600px) { */
 /* Medium devices (landscape tablets, 768px and up) */
 /*@media only screen and (min-width: 768px) {...} */
 
