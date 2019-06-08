@@ -1,14 +1,14 @@
 /* Extra small devices (phones, 600px and down) */
   :root {
-    --rose-gold: #F66C35;
-    --blue: #017672;
-    --black: #232323;
+    --blue: #335d67;
+    --black: #060d0f;
     }
 
   body {
     font-family: 'Open Sans', sans-serif;
     color: white;
-    background-color:#191919;
+    /* color used to be #191919 */
+    background-color: var(--black);
   }
 
   a { color: inherit; } 
@@ -194,14 +194,14 @@
 
   .content .title{
     flex: 1;
-
-    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    font-size: 1.5em;
     letter-spacing: .5em;
   }
 
   .content .text {
     flex: 1;
-
     font-size: .8em;
     letter-spacing: .3em;
   }
@@ -227,11 +227,9 @@
   /* Header lines for introscreen */
   hr {
     flex: 1;
+    width: 27em;
     border-top: 1px solid white;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    margin-left: .85em;
-    margin-right: .85em;
+    margin: 3em .85em;
   }
 
   /* Resume Button */
@@ -240,6 +238,7 @@
     flex:1;
     border:1.2px solid white;
     padding: .5em 3em;
+    margin: 5em auto;
     color:white;
     font-size:.8em;
     background: none;
@@ -259,22 +258,27 @@
     text-decoration: none;
   }
 
-  .about-me-container,
-  .skills-container,
-  .projects-container,
-  .contact-me-container{
-    padding: 5em 1em;
+  .info-container{
+    letter-spacing: 2px;
+    padding: 10em 5em;
   }
 
-  .about-me-container h1,
-  .skills-container h1,
-  .projects-container h1,
-  .contact-me-container h1{
-    padding: 3em 0em;
+   h1{
+    padding: 3em 0px;
     letter-spacing: .2em;
   }
   
-  .skils-container h3{
+  .progress-wrap {
+    display:flex;
+  
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .skill-entry {
+    width: 30%;
+  }
+  h3{
     margin: 1em 0em;
   }
 
@@ -287,7 +291,7 @@
   }
 
   .progress-bar {
-    background-color: var(--rose-gold);
+    background-color: var(--blue);
   }
 
   .progress-bar span{
@@ -313,7 +317,8 @@
   .project-card {
     padding: 2em;
     margin: 1em;
-    height:10%;
+    height: 1em;
+    width: 1em;
     border:white solid 1px;
     background: var(--black);
   }
