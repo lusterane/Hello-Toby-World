@@ -3,7 +3,7 @@
 Portfolio web site
 
 ## Status
-✅ Website is online and hosted at http://hellotobyworld.com
+Website is online and hosted at http://hellotobyworld.com
 
 ## Backend Features to add
 * Cron scheduled updates that pull data from MySQL Database
