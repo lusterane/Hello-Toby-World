@@ -386,7 +386,7 @@ h3{
 }
 
 .contact-box{
-  width:95%;
+  width:50em;
   margin: 1em auto;
   background: transparent;
   border: none;
@@ -410,10 +410,10 @@ h3{
 
 .submit-btn {
   margin-top: 2em;
-  width:95%;
+  width: 50em;
   height:3em;
 }
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px to 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .project-card {
     width: 80vw;
@@ -425,7 +425,10 @@ h3{
     width: 10em;
     transition: 500ms;
   }
-
+  .contact-box,
+  .submit-btn {
+    width: 100%;
+  }
 }
 
 /* Small devices (mobile phones, 768px and down) */
@@ -450,6 +453,11 @@ h3{
   .skill-entry {
     width: 100%;
     transition: 500ms;
+  }
+
+  .contact-box,
+  .submit-btn {
+    width: 100%;
   }
 
 }
