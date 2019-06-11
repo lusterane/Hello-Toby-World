@@ -270,7 +270,11 @@ h1{
   letter-spacing: .2em;
 }
 
-.progress-wrap {
+.about-me-container{
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.progress-wrap{
   display:flex;
 
   flex-wrap: wrap;
@@ -303,40 +307,37 @@ h3{
   right: 0;
 }
 
-#github-project-icon{
-  text-align: center;
-  width:100%;
-}
 .projects-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .project-title{
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .project-sub-title{
-  font-size:14px;
+  font-size:17px;
   margin-left: 1em;
 }
 
 .project-card {
+  background-size: 15vw;
+  background-repeat: no-repeat;
+  background-position: center;
   font-size: 14px;
   padding: 1em;
   margin: 1em 0em;
   height: 25vw;
-  width: 23vw;
+  width: 35vw;
   border:white solid 1px;
 }
 
-
 @-webkit-keyframes select-project {
   from {
-    background:var(--black);
+
   }
   to {
-    background-color: var(--blue);
     color:white;
     text-decoration: none;
   }
@@ -344,10 +345,9 @@ h3{
 
 @keyframes select-project {
   from {
-    background:var(--black);
+
   }
   to {
-    
     border: var(--blue) solid 1px;
     text-decoration: none;
   }
@@ -355,6 +355,7 @@ h3{
 
 @-webkit-keyframes select-title {
   from{
+
   }
   to{
     color:var(--blue)
@@ -363,18 +364,20 @@ h3{
 
 @keyframes select-title {
   from{
+
   }
   to{
     color:var(--blue)
   }
 }
 
+
 .project-card:hover{
   -webkit-animation: select-project .5s forwards;
   animation: select-project .5s forwards;
 }
 
-.project-card:hover > .project-title {
+.project-card:hover > .desc > .project-title{
   -webkit-animation: select-title .5s forwards;
   animation: select-title .5s forwards;
 }
