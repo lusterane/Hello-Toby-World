@@ -21,4 +21,3 @@ $(document).ready(function(){
         $("#logo").css(styles);
     });
 });
-
