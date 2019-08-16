@@ -1,13 +1,13 @@
 :root {
-  --blue: #8f8781;
-  --black: #060d0f;
+  --gold: #a3958b;
+  --darkBlue: #112a30;
   }
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: white;
   /* color used to be #191919 */
-  background-color: var(--black);
+  background-color: var(--darkBlue);
 }
 
 a { color: inherit; } 
@@ -202,6 +202,7 @@ a:hover { color: inherit; }
 
 .content .text {
   flex: 1;
+  color: var(--gold);
   font-size: .8em;
   letter-spacing: .3em;
 }
@@ -241,7 +242,6 @@ hr {
   border:1.2px solid white;
   padding: .5em 3em;
   margin: 5em auto;
-  color:white;
   font-size:.8em;
   background: none;
   transition: all 500ms;
@@ -267,6 +267,7 @@ a:hover{
 }
 
 h1{
+  color: var(--gold);
   padding: 20vh 0;
   letter-spacing: .2em;
 }
@@ -307,7 +308,7 @@ h3{
 }
 
 .progress-bar {
-  background-color: var(--blue);
+  background-color: var(--gold);
 }
 
 .progress-bar span{
@@ -357,7 +358,7 @@ h3{
 
   }
   to {
-    border: var(--blue) solid 1px;
+    border: var(--gold) solid 1px;
     text-decoration: none;
   }
 }
@@ -367,7 +368,7 @@ h3{
 
   }
   to{
-    color:var(--blue)
+    color:var(--gold)
   }
 }
 
@@ -376,7 +377,7 @@ h3{
 
   }
   to{
-    color:var(--blue)
+    color:var(--gold)
   }
 }
 
@@ -394,6 +395,20 @@ h3{
 
 .connect-with-me-container {
   width: 100%;
+}
+
+.connect-info-wrapper {
+
+}
+
+.connect-info {
+  display: flex;
+  justify-content: center;
+}
+
+.connect-icon {
+  padding: 3vw;
+  color: #a3958b;
 }
 
 #message-box {
