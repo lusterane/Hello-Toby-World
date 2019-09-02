@@ -5,9 +5,9 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: grey;
   /* color used to be #191919 */
-  background-color: var(--darkBlue);
+  background-color: white;
 }
 
 a { color: inherit; } 
@@ -75,9 +75,6 @@ a:hover { color: inherit; }
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
-}
-body {
-  background: black;
 }
 
 .arrow {
@@ -274,6 +271,7 @@ body {
 }
 
 .content .title{
+  color: white;
   flex: 1;
   font-weight: bolder;
   margin-bottom: 1rem;
@@ -283,7 +281,7 @@ body {
 
 .content .text {
   flex: 1;
-  color: var(--gold);
+  color: grey;
   font-size: .8em;
   letter-spacing: .3em;
 }
@@ -319,6 +317,7 @@ hr {
 /* Resume Button */
 .resume-btn,
 .submit-btn {
+  color: white;
   flex:1;
   border:1.2px solid white;
   padding: .5em 3em;
@@ -367,13 +366,14 @@ h1{
 }
 
 .about-summary {
+  margin-top: 10%;
   margin-left: 5%;
 }
 
 #profile-picture {
   width:30%;
-  height: 10%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 5%;
+  box-shadow: 0px 35px 53px -1px rgba(0,0,0,0.53);
 }
 
 .right-align {
