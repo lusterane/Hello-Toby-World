@@ -366,32 +366,24 @@ h1{
   margin-bottom: 50vh;
 }
 
-.profile-picture {
-  display: inline;
-  margin-top: 0 auto;
-  height: 100%;
-  width: 100%;
-}
-/*
-display: inline;
-    margin: 0 auto;
-    height: 100%;
-    width: auto;*/
-.image-crop {
-  display: inline;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
+.about-summary {
+  margin-left: 5%;
 }
 
-.crop-picture {
+#profile-picture {
+  width:30%;
+  height: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.right-align {
+  word-wrap: break-word;
+}
 
 .about-summary {
+  width: 60%;
 }
+
 .progress-wrap{
   display:flex;
 
