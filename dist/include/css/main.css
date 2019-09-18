@@ -281,7 +281,7 @@ a:hover { color: inherit; }
 
 .content .text {
   flex: 1;
-  color: grey;
+  color: white;
   font-size: .8em;
   letter-spacing: .3em;
 }
@@ -347,6 +347,7 @@ a:hover{
 }
 
 h1{
+  font-weight: bold;
   color: var(--gold);
   padding: 20vh 0;
   letter-spacing: .2em;
@@ -382,6 +383,10 @@ h1{
 
 .about-summary {
   width: 60%;
+}
+
+.profile-picture {
+  border-radius: 25px;
 }
 
 .progress-wrap{
