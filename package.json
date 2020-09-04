@@ -10,6 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.15",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.13.1"
   }
 }
